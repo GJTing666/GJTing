@@ -1,0 +1,424 @@
+/* 字体、颜色、背景色、行高、外边距、内边距、浮动、清除浮动、超出隐藏 */
+
+/* 字体 12 14 16 18 20 22 24 30 36 */
+.font-12 {
+	font-size: 12px;
+}
+
+.font-14 {
+	font-size: 14px;
+}
+
+.font-16 {
+	font-size: 16px;
+}
+
+.font-18 {
+	font-size: 18px;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+.font-22 {
+	font-size: 22px;
+}
+
+.font-24 {
+	font-size: 24px;
+}
+
+.font-30 {
+	font-size: 30px;
+}
+
+.font-36 {
+	font-size: 36px;
+}
+.font-w{
+	font-weight: bold;
+}
+
+/* 字体颜色 */
+/* 主色调 */
+.text-main {
+	color: #ff2d52;
+}
+
+.text-main-active {
+	color: #ec193e;
+}
+
+/* 字体灰色 333 666 999 */
+.text-dark {
+	color: #333;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #000;
+}
+
+.text-gary {
+	color: #666;
+}
+
+.text-graylight {
+	color: #999;
+}
+
+.text-blackdark {
+	color: #aaa;
+}
+
+/* 背景色 f1f1f1 f2f2f2 f7f7f7 */
+.bg-main {
+	background: #ff2d52;
+}
+
+.bg-main-active {
+	background: #ff2d52;
+}
+
+.bg-gray {
+	background: #f2f2f2;
+}
+
+.bg-black {
+	background: #535353;
+}
+
+/* 行高 22 24 36 48 */
+.line-22 {
+	line-height: 22px;
+}
+
+.line-24 {
+	line-height: 24px;
+}
+
+.line-34 {
+	line-height: 34px;
+}
+
+.line-48 {
+	line-height: 48px;
+}
+
+/* 左浮动 */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.line-through{
+	text-decoration: line-through;
+}
+
+/* 清除浮动 */
+/* after before 伪元素 */
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* 外边距 5 10 15 20 25 30 */
+/* 外边距 5 */
+.margin-5 {
+	margin: 5px;
+}
+
+.margin-5-l {
+	margin-left: 5px;
+}
+
+.margin-5-r {
+	margin-right: 5px;
+}
+
+.margin-5-t {
+	margin-top: 5px;
+}
+
+.margin-5-b {
+	margin-bottom: 5px;
+}
+
+.margin-5-lr {
+	margin: 0 5px;
+}
+
+.margin-5-tb {
+	margin: 5px 0;
+}
+
+/* 外边距 10 */
+.margin-10 {
+	margin: 10px;
+}
+
+.margin-10-l {
+	margin-left: 10px;
+}
+
+.margin-10-r {
+	margin-right: 10px;
+}
+
+.margin-10-t {
+	margin-top: 10px;
+}
+
+.margin-10-b {
+	margin-bottom: 10px;
+}
+
+.margin-10-lr {
+	margin: 0 10px;
+}
+
+.margin-10-tb {
+	margin: 10px 0;
+}
+
+/* 外边距 15 */
+.margin-15 {
+	margin: 15px;
+}
+
+.margin-15-l {
+	margin-left: 15px;
+}
+
+.margin-15-r {
+	margin-right: 15px;
+}
+
+.margin-15-t {
+	margin-top: 15px;
+}
+
+.margin-15-b {
+	margin-bottom: 15px;
+}
+
+.margin-15-lr {
+	margin: 0 15px;
+}
+
+.margin-15-tb {
+	margin: 15px 0;
+}
+
+.margin-17-l {
+	margin-left: 17px;
+}
+
+
+/* 外边距 20 */
+.margin-20 {
+	margin: 20px;
+}
+
+.margin-20-l {
+	margin-left: 20px;
+}
+
+.margin-20-r {
+	margin-right: 20px;
+}
+
+.margin-20-t {
+	margin-top: 20px;
+}
+
+.margin-20-b {
+	margin-bottom: 20px;
+}
+
+.margin-20-lr {
+	margin: 0 20px;
+}
+
+.margin-20-tb {
+	margin: 20px 0;
+}
+
+
+/* 外边距25 */
+.margin-25 {
+	margin: 25px;
+}
+
+.margin-25-l {
+	margin-left: 25px;
+}
+
+.margin-25-r {
+	margin-right: 25px;
+}
+
+.margin-25-t {
+	margin-top: 25px;
+}
+
+.margin-25-b {
+	margin-bottom: 25px;
+}
+
+.margin-25-lr {
+	margin: 0 25px;
+}
+
+.margin-25-tb {
+	margin: 25px 0;
+}
+
+
+/* 外边距 30 */
+.margin-30 {
+	margin: 30px;
+}
+
+.margin-30-l {
+	margin-left: 30px;
+}
+
+.margin-30-r {
+	margin-right: 30px;
+}
+
+.margin-30-t {
+	margin-top: 30px;
+}
+
+.margin-30-b {
+	margin-bottom: 30px;
+}
+
+.margin-30-lr {
+	margin: 0 30px;
+}
+
+.margin-30-tb {
+	margin: 30px 0;
+}
+
+/* 外边距 40 */
+.margin-40-l {
+	margin-left: 40px;
+}
+
+.margin-40-r {
+	margin-right: 40px;
+}
+
+.margin-40-t {
+	margin-top: 40px;
+}
+
+.margin-40-b {
+	margin-bottom: 40px;
+}
+
+.margin-40-lr {
+	margin: 0 40px;
+}
+
+.margin-40-tb {
+	margin: 40px 0;
+}
+
+/* 内边距 */
+.padding-40-top {
+	padding-top: 40px;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+/* 超出隐藏 */
+.overflow{
+	overflow: hidden;
+}
+
+/* 文字超出显示省略号 */
+.text-ellipsis-t{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* 不允许换行 即一行显示*/
+	white-space: nowrap;
+}
+.text-ellipsis-o{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* 按钮 */
+.button{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.button.button-main, .button-main-hover:hover{
+	background: #FF2D52;
+	color: #fff;
+	border-color: #FF2D52;
+}
+.button.button-main:hover{
+	background-color: #EC193E;
+	border-color: #EC193E;
+}
+
+/* 翻页 */
+.f-goods-fanye{
+	width: 346px;
+	height: 32px;
+	position: absolute;
+	bottom: 0;
+	right: 16px;
+}
+.f-button-shangyiye{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	padding: 7px 10px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.f-button-yeshu{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	padding: 7px 10px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+.f-button-yeshu:hover{
+	background: #FF2D52;
+}
+
+

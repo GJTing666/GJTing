@@ -1,0 +1,48 @@
+/* 重置浏览器默认样式 */
+* {
+	/* 设置盒子的宽度你、包含：padding margin */
+	margin: 0;
+	padding: 0;
+	/* line-height: 1; */
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 12px;
+	color: #333;
+	font-family: "微软雅黑",arial;
+	/* 页面最小尺寸 */
+	min-width: 1200px;
+	overflow-x:hidden;
+}
+.content{
+	margin: 0 auto;
+	max-width: 1200px;
+	
+}
+
+/* 去掉列表样式原点 */
+li {
+	list-style: none;
+}
+
+a {
+	/* 去掉下划线 */
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+input {
+	border: 1px solid #ccc;
+}
+
+/* 去掉输入框的聚焦边框颜色 */
+:focus {
+	outline: none;
+}
+
+/* 去斜体 */
+em,i{
+	font-style: normal;
+}

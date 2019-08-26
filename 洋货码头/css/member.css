@@ -1,0 +1,395 @@
+/* 会员界面 */
+
+.cont-box{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	height: 644px;
+	border: 1px solid #ccc;
+}
+
+/* 内容左边 */
+.member-left {
+	width: 230px;
+	height: 100%;
+	border-right: 1px solid #ccc;
+}
+
+.menber-center {
+	width: 100%;
+	height: 60px;
+	padding-left: 28px;
+	line-height: 56px;
+	border-bottom: 1px solid #ccc;
+	background: #FFF9F5;
+}
+
+.menber-center .huiuyan-center {
+	font-size: 24px;
+	vertical-align: -2px;
+}
+
+.myOrder {
+	width: 204px;
+	height: auto;
+	padding-left: 30px;
+	margin-left: 12px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.myOrder:last-child {
+	border-bottom: 0;
+}
+
+.order-lists {
+	display: none;
+}
+
+.order-lists li {
+	height: 30px;
+	line-height: 52px;
+	cursor: pointer;
+}
+
+.order-lists li:hover{
+	color: #FF2D52;
+}
+
+.myOrder.on .liStyle {
+	color: #FF2D52;
+}
+
+.myOrder .liStyle {
+	height: 30px;
+	font-weight: bold;
+	line-height: 52px;
+	cursor: pointer;
+	list-style-type: square;
+}
+ 
+ .myOrder .order-num{
+	 margin-top: 16px;
+	 margin-right: 10px;
+	 float: right;
+	 width: 18px;
+	 height: 18px;
+	 text-align: center;
+	 line-height: 18px;
+	 background: #FF2D52;
+	 color: #fff;
+ }
+
+/* 内容右边 */
+.member-right {
+	width: 968px;
+	height: 100%;
+	padding: 20px;
+}
+
+.member-box {
+	display: none;
+}
+
+.member-data {
+	width: 930px;
+	height: 160px;
+	border: 1px solid #ccc;
+	background: #FFF9F5;
+}
+
+.member-data-l {
+	height: 160px;
+	padding-top: 20px;
+}
+/* 头像 */
+.member-data-l img{
+	float: left;
+	margin-left: 20px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.member-data-l .member-content {
+	float: left;
+	width: 208px;
+	margin-top: 14px;
+	margin-left: 20px;
+	height: 93px;
+}
+/* 会员名 */
+.member-cont-name {
+	height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.member-icon {
+	vertical-align: -2px;
+	color: #FF2D52;
+}
+/* 会员注册 */
+.member-registe {
+	height: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/* 充值 */
+.member-invest {
+	height: 24px;
+	width: 50px;
+	line-height: 10px;
+	margin-left: 10px;
+}
+
+/* 会员权限 */
+.member-attribute {
+	float: right;
+	width: 560px;
+	height: 159px;
+	padding-left: 10px;
+}
+
+.attr-list {
+	width: 124px;
+	height: 160px;
+	padding-top: 32px;
+	text-align: center;
+}
+
+.attr-list p {
+	margin: 8px 0;
+}
+
+.attr-list span {
+	color: #FF2D52;
+	font-size: 14px;
+}
+
+/* 内容列表 */
+.mem-goods-content {
+	width: 930px;
+	margin-top: 20px;
+	height: auto;
+}
+
+.mem-goods-box {
+	float: left;
+	margin-bottom: 20px;
+	width: 456px;
+	height: 200px;
+	border: 1px solid #ccc;
+}
+
+
+/* .mem-goods-box:first-child {
+	margin-top: 0;
+	margin-left: 0;
+} */
+
+.mem-goods-title {
+	width: 454px;
+	height: 40px;
+	line-height: 40px;
+	background: #FFF9F5;
+}
+
+.mem-goods-title .mem-goods-text{
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.mem-goods-title .mem-goods-more {
+	float: right;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.mem-goods-more a:hover {
+	color: #FF2D52;
+}
+
+/* 轮播商品图片 */
+.detail-slide{
+	padding: 0 12px;
+	width: 100%;
+	height: 124px;
+	margin: 15px 0;
+}
+
+.detail-slide .detail-button{
+	padding: 5px 2px;
+	margin-top: 34px;
+	width: 26px;
+	height: 56px;
+	line-height: 44px;
+}
+
+.detail-slide .detail-button-right {
+	padding: 5px 10px;
+	margin-top: 34px;
+	width: 26px;
+	height: 56px;
+	line-height: 44px;
+}
+
+.detail-slide .detail-button:hover {
+	color: #FF2D52;
+}
+
+.detail-slide .detail-button-right:hover {
+	color: #FF2D52;
+}
+
+/* 幻灯区域 */
+.detail-slide-box{
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.detail-slide-img{
+	padding-left: 6px;
+	
+}
+
+.detail-slide-img li {
+	margin: 0 8px;
+	float: left;
+}
+
+.detail-slide-img img{
+	width: 106px;
+	height: 106px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/* 我的积分 */
+.integration-box {
+	/* display: none; */
+}
+
+.my-integration {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+
+.my-integration > span {
+	display: block;
+	width: 66px;
+	height: 40px;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 2px solid #FF2D52;
+}
+
+.current-integral {
+	width: 100%;
+	height: 178px;
+	margin-top: 20px;
+	padding-left: 18px;
+	padding-top: 10px;
+	background: #FFF9F5;
+	border: 1px solid #ccc;
+}
+
+.current-integral .integral-exchange {
+	height: 30px;
+}
+
+.integral-exchange .integral-num {
+	display: inline-block;
+	width: 96px;
+}
+
+.integral-num em {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF2D52;
+}
+
+.integral-exchange a{
+	color: #fff;
+	background: #FF2D52;
+}
+
+.integral-exchange a:hover {
+	background: #EC193E;
+}
+
+.integral-exchange .member-rank {
+	margin-left: 20px;
+	display: inline-block;
+	width: 106px;
+}
+
+.member-rank em {
+	color: #ff2d52;
+}
+
+.integral-desc p {
+	height: 14px;
+	margin: 8px 0;
+}
+
+.integral-desc span {
+	font-weight: bold;
+}
+
+
+/* 销售记录 */
+.sales-records-box{
+	margin-top: 20px;
+	height: auto;
+	border: 1px solid #ccc;
+}
+.sales-records-lists{
+	width: 100%;
+	height: 240px;
+}
+
+.sales-records-lists li {
+	height: 40px;
+	line-height: 40px;
+}
+
+/* 列表表头 */
+.sales-records-lists li .sales-records-hang {
+	font-weight: bold;
+}
+
+.sales-records-lists li span {
+	float: left;
+	width: 308px;
+	text-align: center;
+	height: 100%;
+}
+
+.sales-records-lists li:first-child {
+	background: #FFF9F5;
+}
+
+.sales-records-cont{
+	height: 40px;
+	line-height: 44px;
+	border-bottom: 1px dashed #ccc;
+}
+.sales-records-cont:last-child{
+	border-bottom: 0;
+}
+
+.integral-fanye {
+	position: relative;
+	margin-top: 20px;
+	height: 40px;
+}
+
+.integral-fanye .f-goods-fanye {
+	position: absolute;
+	right: -8px;
+	border-bottom: 0;
+}
+

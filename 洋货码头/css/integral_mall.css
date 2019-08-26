@@ -1,0 +1,466 @@
+/* 积分商城 */
+
+.banner-box {
+	height: 400px;
+	background: #ededed;
+}
+
+.banner-bgd {
+	float: right;
+	height: 400px;
+	width: 30%;
+	background: #dfdfdf;
+}
+
+.banner-personal {
+	width: 290px;
+	height: 400px;
+	position: relative;
+}
+
+.personal-box {
+	width: 274px;
+	height: 326px;
+	background: #fff;
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+
+/* 头像 */
+.img-box > p{
+	margin-left: 18px;
+	margin-top: 6px;
+}
+
+.member-data-l {
+	width: 240px;
+	height: 182px;
+	margin-left: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+.member-data-l img{
+	margin-left: 2;
+	margin-top: 30px;
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+}
+
+.member-data-l .member-content {
+	float: left;
+	width: 134px;
+	margin-top: 40px;
+	margin-left: 18px;
+	height: 93px;
+}
+/* 会员名 */
+.member-cont-name {
+	height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.welcom{
+	color: #FF2D52;
+	height: 20px;
+	margin: 6px 0;
+}
+
+.member-icon {
+	vertical-align: -2px;
+	color: #FF2D52;
+}
+
+/* 会员注册 */
+.member-registe {
+	height: 20px;
+	margin: 6px 0;
+}
+/* 签到 */
+.member-invest {
+	height: 24px;
+	width: 60px;
+	line-height: 14px;
+	text-align: center;
+	background: #FF2D52;
+	color: #fff;
+}
+
+.member-exp {
+	width: 120px;
+	height: 12px;
+	background: #eeeeee;
+	margin-bottom: 8px;
+}
+
+.member-exp .member-exp-txt {
+	width: 10%;
+	height: 100%;
+	background: #FF2D52;
+}
+
+.menber-my {
+	margin-left: 20px;
+	margin-top: 24px;
+	width: 274px;
+	height: 34px;
+}
+
+.menber-my img {
+	float: left;
+	margin-top: 3px;
+	width: 30px;
+	height: 30px;
+}
+
+.menber-my-text {
+	float: left;
+	margin-left: 5px;
+}
+.menber-my-text p span {
+	color: #FF2D52;
+}
+
+/* banner */
+
+.jifenlunbo {
+	height: 400px;
+	position: absolute;
+}
+
+.banner-cursoal{
+	position: relative;
+}
+
+.banner-cursoal, .banner-cursoal img{
+	width: 800px;
+	height: 400px;
+	/* margin-right: 1px; */
+}
+
+.cursoal-silide{
+	position: absolute;
+	top: 0;
+	left: -800px;
+	font-size: 0;
+}
+
+/* 轮播左右按钮 */
+.cursoal-btn{
+	position: absolute;
+	/* z-index: 1; */
+	display: inline-block;
+	width: 26px;
+	height: 54px;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	text-align: center;
+	line-height: 54px;
+	font-size: 24px;
+	top: 42%;
+	cursor: pointer;
+}
+
+.banner-cursoal .prev{
+	left: 34px;
+}
+.banner-cursoal .next{
+	right: 34px;
+}
+
+.cursoal-dot{
+	position: absolute;
+	display: inline-block;
+	top: 90%;
+	left: 43%;
+}
+.cursoal-dot li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(134,134,134,0.5);
+	margin: 0 5px;
+	color: #fff;
+}
+.cursoal-dot li.on{
+	background: #FF2D52;
+}
+
+/* 优惠券兑换 */
+
+.coupon-exchange {
+	height: 280px;
+}
+
+.coupon-content {
+	height: 60px;
+	font-size: 20px;
+}
+
+.coupon-content span {
+	display: block;
+	width: 142px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-bottom: 2px solid #FF2D52;
+}
+
+.coupon-lists {
+	height: 220px;
+	border: 1px solid #ccc;
+}
+
+.coupon-lists .coupon-outer {
+	float: left;
+	width: 278px;
+	height: 180px;
+	margin-left: 18px;
+	margin-top: 22px;
+}
+
+
+/* 
+    radial-gradient()函数用来创建一个径向渐变circle:圆形
+    参数详解：
+    原点位置:可以用px/left bottom 表示
+            仅用一个px表示,其表示x方向位置，y方向位置默认为正中间;如果两个px,分别表示x和y方向位置.
+    形状：circle（圆）,ellipse（椭圆）
+    直径：原点到远角，远边，近边，近角的距离，其可以用来确定渐变直径。
+    颜色: 渐变颜色
+    位置：渐变颜色的终点位置
+    注意：半径省略默认直径为原点到远角的距离，位置省略默认为中心点。形状也可省略。
+
+ */
+/* circle at 0 106px : 圆心位置 
+   transparent 32px : 直径
+   blue 0px : 颜色渐变程度
+*/
+.coupon-inner:before {
+	content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		z-index: -1;
+		background-image: radial-gradient(circle at 0 106px,transparent 32px, #fff9f5 0px);
+	}
+
+.coupon-inner {
+	position: relative;
+	height: inherit;
+	}
+
+.coupon-inner:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	background-image: radial-gradient(circle at 100% 106px,transparent 32px, #fff9f5 0px);
+	}
+
+.coupon-cont {
+	height: 106px;
+	width: 214px;
+	margin-left: 32px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.coupon-price {
+	float: left;
+	margin-top: 36px;
+	font-weight: bold;
+	color: #FF2D52;
+	width: 56px;
+	height: 36px;
+}
+
+.coupon-text {
+	float: left;
+	margin-top: 10px;
+	margin-left: 28px;
+	width: 130px;
+	height: 60px;
+	
+}
+.coupon-text p {
+	margin: 8px 0;
+}
+
+.coupon-text .condition {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.coupon-text .condition-one {
+	color: #8a8988;
+}
+
+.exchange-txt {
+	width: 278;
+	height: 74px;
+	text-align: center;
+}
+
+.exchange-btn {
+	margin-top: 16px;
+	width: 140px;
+	height: 38px;
+	line-height: 26px;
+	border-radius: 25px;
+	background: #ff92a5;
+	color: #fff;
+}
+.exchange-btn:hover {
+	background: #FF2D52;
+}
+
+/* 限时兑换 */
+.limited-coupon {
+	height: 434px;/* 60 */
+}
+
+.limited-content {
+	height: 372px;
+	padding: 24px 0;
+	border: 1px solid #ccc;
+}
+
+.limited-content li {
+	float: left;
+	width: 218px;
+	height: 100%;
+	text-align: center;
+	margin-left: 18px;
+	border: 1px solid #ccc;
+}
+
+.limited-content li:hover {
+	border-color: #FF2D52;
+}
+
+.limited-content li img {
+	width: 100%;
+	height: 218px;
+}
+
+.limited-title {
+	margin: 6px 0;
+	height: 20px;
+	font-size: 14px;
+}
+
+.limited-text {
+	margin: 6px 0;
+	height: 38px;
+	text-align: center;
+}
+
+.limited-btn {
+	width: 148px;
+	height: 38px;
+	line-height: 28px;
+	background: #FF2D52;
+	color: #fff;
+}
+
+.limited-btn:hover {
+	background: #ec193e;
+}
+
+/* 倒计时 */
+.count-down{
+	font-size: 12px;
+}
+
+.limited-btn-over {
+	width: 148px;
+	height: 38px;
+	line-height: 28px;
+	background: #999999;
+	color: #fff;
+}
+
+/* 精品兑换 */
+.boutique {
+	height: 810px;
+}
+
+.boutique-content {
+	height: 750px;
+	border: 1px solid #ccc;
+	padding-top: 22px;
+}
+
+.boutique-content li {
+	float: left;
+	width: 218px;
+	height: 338px;
+	text-align: center;
+	margin-top: 18px;
+	margin-left: 18px;
+	border: 1px solid #ccc;
+}
+
+.boutique-content li img {
+	width: 100%;
+	height: 218px;
+}
+
+.boutique-title {
+	margin: 6px 0;
+	height: 20px;
+	font-size: 14px;
+}
+
+.boutique-jifen {
+	height: 25px;
+	font-size: 14px;
+	color: #FF2D52;
+	font-weight: bold;
+}
+
+.boutique-text {
+	margin: 6px 0;
+	height: 38px;
+	text-align: center;
+}
+
+.boutique-btn {
+	width: 150px;
+	height: 38px;
+	line-height: 28px;
+	background: #FF2D52;
+	color: #fff;
+}
+
+.boutique-btn:hover {
+	background: #ec193e;
+}
+
+.boutique-btn-over {
+	width: 148px;
+	height: 38px;
+	line-height: 28px;
+	background: #999999;
+	color: #fff;
+}
+
+.boutique-jifen-over {
+	height: 25px;
+	font-size: 14px;
+	color: #ff6600;
+	font-weight: bold;
+}
+
+

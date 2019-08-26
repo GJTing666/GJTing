@@ -1,0 +1,518 @@
+/* 主要存放顶部、侧边栏、底部样式 */
+/* 1200 1280 1366 1534 */
+
+
+/* 顶部导航 */
+.top_nav{
+	height: 35px;
+	line-height: 34px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* 搜索 */
+
+.search-box{
+	/* 根据内容撑宽 可以设置宽高 */
+	display: inline-block;
+	margin-left: 182px;
+}
+
+.search{
+	border: 2px solid #FF2D52;
+	/* 内联元素会有3像素差距，给父级设置字体大小 */
+	font-size: 0;
+	/* 相对定位 */
+	/* position: relative; */
+}
+
+/* 搜索框 */
+.search-input{
+	border: 0;
+	height: 41px;
+	width: 430px;
+	background:url(../img/search.png) no-repeat 10px center;
+	padding-left: 30px;
+	
+}
+
+.search-text{
+	font-family: "微软雅黑";
+}
+
+/* 搜索按钮 */
+.search-btn{
+	display: inline-block;
+	height: 41px;
+	width: 80px;
+	background: #FF2D52;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* 主导航 */
+
+.main-nav{
+	height: 39px;
+	line-height: 39px;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+
+.classify-all{
+	width: 200px;
+	position: relative;
+}
+/* 下拉列表的隐显 */
+.classify-all:hover .classfix-lists{
+	display: block;
+}
+
+.classify-text{
+	background: #FF2D52;
+}
+
+/* static显示效果 */
+.classify-all:hover .classify-text , .classify-all.static .classify-text {
+	background: #EC193E;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+
+.classfix-lists{
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+/* static显示效果 */
+.classify-all.static .classfix-lists{
+	display: block;
+}
+
+/* 首页信息样式 */
+.classify-all-all{
+	width: 200px;
+	z-index: 10;
+	position: relative;
+}
+/* 下拉列表的隐显 */
+.classify-all-all:hover .classfix-lists{
+	display: block;
+}
+.classify-all-all:hover .classify-text , .classify-all-all .classify-text {
+	background: #EC193E;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+/* static显示效果
+.classify-all-all.static .classfix-lists{
+	display: block;
+} */
+
+/* 列表样式 */
+.classfix-lists li{
+	height: 51px;
+	background: #FF2D52;
+	line-height: 49px;
+	border-bottom: 1px solid #ec193e;
+	padding: 0 20px 0 30px;
+}
+
+/* 下拉列表背景的隐显 */
+.classfix-lists li:hover{
+	background: #EC193E;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+
+/* #EC193E */
+.all-fenlei{
+	font-size: 14px;
+	padding-right: 5px;
+}
+
+.middle-nav{
+	height: 39px;
+	line-height: 50px;
+}
+
+.middle-nav li{
+	width: 100px;
+	float: left;
+	line-height: 39px;
+	text-align: center;
+}
+..middle-nav > a{
+	color: #fff;
+}
+
+.middle-nav li:hover{
+	background: #EC193E;
+}
+
+/* <!-- 二级分类 --> */
+.classify-two{
+	width: 722px;
+	height: 306px;
+	border: 1px solid #ff7710;
+	position: absolute;
+	top: 0;
+	left: 200px;
+	display: none;
+	color: #333;
+	z-index: 7;
+}
+
+.classify-two-lists{
+	width: 50%;
+	padding: 0 20px;
+	float: left;
+}
+
+.classify-two-lists .classify-two-title{
+	line-height: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.classify-two-lists .alllists{
+	line-height: 24px;
+}
+
+.classify-two-lists .alllists a:hover{
+	color: #FF2D52;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+
+/* 二级分类的隐显 */
+.classfix-lists li:hover .classify-two{
+	display: block;
+	/* z-index: 3; */
+	background: lightgray;
+}
+
+/* 侧边栏 */
+.aside{
+	position: fixed;
+	width: 36px;
+	background: #535353;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+/* 控件列表 */
+.aside-pannel{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	background: #535353;
+	position: relative;
+	z-index: 10;
+}
+
+
+/* 控件位置 */
+.aside-bar{
+	position: absolute;
+	top: 40%;
+	bottom: 0;
+	width: 100%;
+}
+
+.aside-bar-lists li{
+	text-align: center;
+	padding: 11px 0;
+	position: relative;
+}
+
+.aside-bar-lists li:hover {
+	background: #FF2D52;
+}
+
+
+
+/* 会员中心 tips */
+.tooltip-bar{
+	background: #EC193E;
+	color: #fff;
+	position: absolute;
+	right: 45px;
+	top: 0;
+	min-width: 70px;
+	min-height: 39px;
+	line-height: 39px;
+	display: none;
+}
+
+.aside-bar-lists li:hover .tooltip-bar{
+	display: block;
+}
+
+/* 二维码 */
+.erweima{
+	top: auto;
+	bottom: 0;
+	line-height: 10px;
+}
+
+.slide-bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #535353;
+}
+
+/* 购物车 */
+.asidebar-bar p{
+	padding: 7px;
+	
+}
+
+.slide-cart .number{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 50%;
+	background: #FF2D52;
+	line-height: 16px;
+}
+
+.slide-cart:hover .number{
+	background: #fff;
+	color: #FF2D52;
+}
+
+
+
+/* 侧边栏详情面板 */
+.aside-slide{
+	z-index: 7;
+	position: absolute;
+	background: #f5f5f5;
+	width: 300px;
+	height: 100%;
+	top: 0;
+	right: -264px;
+}
+
+.aside-slide-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+/* 购物车信息 */
+.gwc-cont{
+	display: inline-block;
+	width: 100%;
+	padding: 0 -1px;
+}
+
+.gwc-cont .gwc-title{
+	height: 35px;
+	/* border-bottom: 1px solid #E2E2E2; */
+	line-height: 34px;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 12px;
+	border-bottom: 1px solid #ccc;
+
+}
+.gwc-cont .gwc-list{
+	margin-top: 1px;
+	padding: 8px 10px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/* .gwc-cont .gwc-list:last-child{
+	border-bottom: 0;
+} */
+
+.gwc-cont .gwc-list img{
+	width: 62px;
+	height: 62px;
+}
+
+.gwc-cont .gwc-list-cont{
+	padding-left: 74px;
+}
+
+.gwc-mintitle{
+	width: 180px;
+	height: 32px;
+	line-height: 16px;
+}
+
+.gwc-delete{
+	cursor: pointer;
+	right: 16px;
+	margin-left: 94px;
+}
+.gwc-jiesuan{
+	border-top: 1px solid #ccc;
+	position: absolute;
+	width: 100%;
+	height: 102px;
+	bottom: 0;
+}
+.gwc-jiesuan .gwc-zongjia{
+	padding: 22px 60px;
+}
+.gwc-button{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	padding: 10px 86px;
+	cursor: pointer;
+}
+.gwc-button:hover{
+	background: #FF2D52;
+	color: #fff;
+}
+
+.gwc-jiesuan .gwc-btn{
+	text-align: center;
+}
+
+/* 侧边栏客服中心内容 */
+
+.b-server-title{
+	width: 100%;
+	height: 116px;
+	background: #ccc;
+	padding-left: 26px;
+	line-height: 30px;
+	padding-top: 35px;
+}
+
+.b-server-cont li {
+	padding-left: 24px;
+	padding-top: 16px;
+	font-weight: bold;
+}
+
+.b-server-cont span{
+	color: #FF2D52;
+	vertical-align: middle;
+}
+
+.b-server-txt{
+	padding-left: 24px;
+	padding-top: 28px;
+}
+
+.b-server-tel{
+	width: 250px;
+	margin-top: 30px;
+	border-top: 1px solid #ccc;
+	margin-left: 20px;
+}
+
+.server-tel-cont{
+	width: 100%;
+	height: 100px;
+}
+.server-tel-cont img{
+	margin-top: 20px;
+	float: left;
+}
+
+.server-zhuanxian{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.server-txt{
+	padding: 12px 0;
+	padding-left: 40px;
+	
+}
+.server-tel{
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #FF2D52;
+}
+
+/* 底部 */
+.foot{
+	border-top: 1px solid #FF2D52;
+	margin-top: 20px;
+}
+
+.foot-server{
+	margin: 40px 0;
+}
+
+.foot-server li{
+	width: 20%;
+	float: left;
+	padding-left: 45px;
+}
+
+/* 售后服务列表 */
+.foot-server-lists{
+	width: 60px;
+	height: 60px;
+	background: url(../img/circle.png);
+	color: #FF2D52;
+	text-align: center;
+	line-height: 60px;
+}
+
+
+.foot-server-cont{
+	padding: 14px 0;
+	padding-left: 70px;
+}
+
+
+.foot-server-detail{
+	height: 170px;
+}
+.foot-server-detail .contact{
+	width: 245px;
+	height: 100%;
+	padding-top: 20px;
+	border-left: 1px solid #dbdbdb;
+	text-align: center;
+}
+
+.foot-server-list{
+	width: 160px;
+	line-height: 32px;
+	margin-left: 20px;
+}
+
+.server-list-title{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.foot-bottom{
+	height: 60px;
+	background: #343434;
+}
+
+.foot-cont{
+	line-height: 60px;
+}
+
+.foot-cont img{
+	vertical-align: middle;
+}
+
+.foot-bottom-txt{
+	margin-left: 15px;
+}
+
+
+

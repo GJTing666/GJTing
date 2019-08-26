@@ -1,0 +1,249 @@
+/* 登录界面 */
+
+.bgImg{
+	text-align: center;
+	/* height: 475px; */
+	margin-top: 35px;
+	margin-bottom: 100px;
+	background-color: #e93854;
+}
+
+.login-cont{
+	/* height: 475px; */
+	position: relative;
+	background: url(../img/bgImg.png) no-repeat;
+}
+
+
+.login-box{
+	width: 348px;
+	padding: 24px 20px;
+	background: #fff;
+	/* position: absolute;
+	top: 54px;
+	right: 50px; */
+	float: right;
+	margin: 60px 150px 60px 0;
+}
+
+.icon-right{
+	width: 16px;
+	height: 16px;
+	line-height: 14px;
+	margin-top: 4px;
+	border-radius: 50%;
+	background: #FF2D52;
+	color: #fff;
+}
+
+.login-tips{
+	margin-top: 10px;
+	height: 26px;
+	background: #FFF9F5;
+	line-height: 24px;
+	border: 1px solid #FF2D52;
+}
+
+.login-rightNow{
+	display: block;
+	float: right;
+	height: 100%;
+	line-height: 24px;
+}
+
+.login-tipIcon{
+	float: left;
+	padding-right: 18px;
+	padding-left: 10px;
+}
+/* 用户名 */
+.login-uName{
+	position: relative;
+	width: 306px;
+	height: 40px;
+	margin-top: 28px;
+	border: 1px solid #ccc;
+}
+.login-uName input{
+	height: 100%;
+	border: 0;
+	float: left;
+}
+/* 用户名图标 */
+.login-uName .uName-icon{
+	display: block;
+	width: 38px;
+	height: 32px;
+	padding-top: 7px;
+	margin-top: 4px;
+	margin-right: 15px;
+	border-right: 1px solid #ccc;
+}
+
+.icon-pic {
+	color: #d0d0d0;
+}
+
+/* 忘记密码 */
+.login-help{
+	margin-top: 16px;
+	height: 20px;
+}
+
+.login-help .login-auto{
+	float: left;
+	height: 100%;
+}
+
+.login-btn{
+	width: 306px;
+	height: 40px;
+	line-height: 28px;
+	margin-top: 16px;
+	padding: 5px 7px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.login-btn:hover{
+	background: #FF2D52;
+	color: #fff;
+}
+
+/* 第三方登陆 */
+.login-other{
+	margin-top: 16px;
+	height: 30px;
+}
+
+/* 注册界面 */
+
+
+.register-box{
+	width: 348px;
+	/* height: 420px; */
+	padding: 24px 20px;
+	background: #fff;
+	float: right;
+	margin: 60px 150px 60px 0;
+}
+
+label.error {
+	width: auto;
+	height: 27px;
+	line-height: 20px;
+	margin-left: 12px;
+	margin-bottom: -24px;
+	background: url(../img/error.png) no-repeat;
+	position: absolute;
+	top: -27px;
+	left: 0;
+}
+
+.icon-pic {
+	color: #d0d0d0;
+}
+
+.icon-right-tip{
+	height: 16px;
+	line-height: 14px;
+	margin-top: 5px;
+	color: #FF2D52;
+}
+
+.register-suggest{
+	width: 306px;
+	height: 22px;
+	margin-bottom: -18px;
+	color: #d0d0d0;
+	padding-left: 12px;
+}
+
+/* 用户名 */
+.register-uName{
+	position: relative;
+	width: 306px;
+	height: 40px;
+	margin-top: 24px;
+	border: 1px solid #ccc;
+}
+
+.register-uName input{
+	width: 186px;
+	height: 100%;
+	border: 0;
+	float: left;
+}
+
+/* 用户名图标 */
+.register-uName .uName-icon{
+	display: block;
+	width: 38px;
+	height: 32px;
+	padding-top: 7px;
+	margin-top: 4px;
+	margin-right: 15px;
+	border-right: 1px solid #ccc;
+}
+
+.register-code-cont{
+	width: 306px;
+	height: 40px;
+	margin-top: 24px;
+}
+
+.register-code{
+	width: 192px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
+.register-code input{
+	height: 100%;
+	width: 110px;
+	border: 0;
+	float: left;
+}
+/* 用户名图标 */
+.register-code .uName-icon{
+	display: block;
+	width: 38px;
+	height: 32px;
+	padding-top: 7px;
+	margin-top: 4px;
+}
+
+/* 获取验证码 */
+.securityCode-btn {
+	/* padding: 5px 7px; */
+	width: 108px;
+	height: 40px;
+	line-height: 28px;
+	float: right;
+	border-radius: 0;
+}
+
+.securityCode-btn:hover {
+	background: #FF2D52;
+	color: #fff;
+}
+
+.play-box {
+	display: none;
+}
+
+.play-box.on {
+	display: block;
+}
+
+.securityCode-btn.disabled {
+	background: #999;
+	cursor: not-allowed;
+	color: #fff;
+}
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+/* 找回密码 */
+
+.rePwd {
+	text-align: center;
+	margin-top: 30px;
+	height: 556px;
+	position: relative;
+}
+
+.rePwd .rePwd-step {
+	width: 620px;
+	height: 400px;
+	position: absolute;
+	top: 70px;
+	left: 290px;
+}
+
+.rePwd-content {
+	width: 570px;
+	height: 70px;
+	margin: 0 25px;
+}
+
+/* 步骤一 */
+.rePwd-steps {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 100%;
+	margin-right: 160px;
+}
+.rePwd-steps:last-child {
+	margin-right: 0;
+}
+
+.rePwd-step-outer {
+	z-index: -1;
+	margin-left: 21px;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #ebebeb;
+}
+
+.rePwd-step-inner {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 24px;
+	height: 24px;
+	background: #ccc;
+	border-radius: 50%;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+
+.rePwd-steps p {
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.rePwd-steps.on .rePwd-step-outer {
+	background: #ffc0cb;
+}
+
+.rePwd-steps.on .rePwd-step-inner {
+	background: #FF2D52;
+}
+
+.rePwd-steps.on p {
+	color: #FF2D52;
+}
+
+.one-two {
+	position: absolute;
+	top: 0;
+	right: 55px;
+	margin-top: 14px;
+	width: 221px;
+	height: 4px;
+	background: #ccc;
+}
+
+.rePwd-steps.on .one-two {
+	background: #FF2D52;
+}
+
+/* 表单 */
+.rePwd-form {
+	width: 660px;
+	height: 200px;
+	margin-left: 70px;
+	margin-top: 80px;
+	display: none;
+}
+
+.rePwd-form.active {
+	display: block;
+}
+
+/* 用户名图标 */
+.uName-icon{
+	display: block;
+	width: 38px;
+	height: 32px;
+	padding-top: 7px;
+	margin-top: 4px;
+}
+
+.icon-pic {
+	color: #d0d0d0;
+}
+
+.rePwd-code-cont{
+	width: 660px;
+	height: 40px;
+	margin-top: 16px;
+}
+
+.rePwd-code-num {
+	width: 306px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
+.rePwd-code-num input {
+	height: 100%;
+	width: 266px;
+	border: 0;
+	float: left;
+}
+
+.rePwd-code{
+	width: 192px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
+.rePwd-code input{
+	height: 100%;
+	width: 152px;
+	border: 0;
+	float: left;
+}
+/* 用户名图标 */
+.rePwd-code .uName-icon{
+	display: block;
+	width: 38px;
+	height: 32px;
+	padding-top: 7px;
+	margin-top: 4px;
+}
+
+/* 获取验证码 */
+.securityCode-btn {
+	width: 108px;
+	height: 40px;
+	line-height: 28px;
+	margin-left: 6px;
+	float: left;
+	border-radius: 0;
+}
+
+.securityCode-btn:hover {
+	background: #FF2D52;
+	color: #fff;
+}
+
+.rePwd-text{
+	float: left;
+	width: 64px;
+	height: 40px;
+	margin-right: 20px;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.rePwd-tips {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	color: #FF2D52;
+}
+
+.rePwd-tips-pwd {
+	margin-left: 8px;
+	width: 180px;
+	height: 40px;
+	color: #FF2D52;
+}
+
+
+.rePwd-button {
+	margin-top: 30px;
+	margin-left: -182px;
+	width: 306px;
+	height: 40px;
+	line-height: 30px;
+	font-size: 14px;
+	border-radius: 0;
+	color: #fff;
+	background: #FF2D52;
+}
+
+.rePwd-button:hover {
+	background: #ec193e;
+}
+
+.rePwd-form img {
+	float: left;
+	margin-left: 16px;
+	width: 80px;
+	height: 80px;
+}
+
+.rePwd-right-text {
+	margin-left: 116px;
+	text-align: start;
+	width: 300px;
+	height: 100px;
+}
+.rePwd-right-text p {
+	margin-top: 10px;
+}
+.rePwd-right-text p a {
+	text-decoration: underline;
+	
+}
+
+

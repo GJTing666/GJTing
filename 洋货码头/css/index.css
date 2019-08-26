@@ -1,0 +1,564 @@
+/* 主页面样式 */
+
+/* 主标题 */
+.main_title{
+	height: 60px;
+	font-size: 24px;
+	line-height: 58px;
+	color: #FF2D52;
+	font-weight: bold;
+	border-bottom: 2px solid #FF2D52;
+}
+
+
+/* 文章列表 */
+.banner .notice{
+	width: 220px;
+	height: 306px;
+	border: 1px solid #ccc;
+}
+
+/* 文章标题 */
+.notice .notice-title{
+	height: 39px;
+	line-height: 38px;
+	/* border-bottom: 1px solid #ccc; */
+	background: #fff9f5;
+	padding: 0 10px;
+	color: #000;
+}
+
+.notice-more:hover{
+	color: #FF2D52;
+	/* 鼠标移到上面时显示手 */
+	cursor: pointer;
+}
+
+/* 文章列表 */
+.notice-lists{
+	padding: 10px;
+}
+
+.notice-lists a{
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	/* 超出隐藏 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* 不允许换行 即一行显示*/
+	white-space: nowrap;
+}
+.notice-lists a:hover{
+	color: #FF2D52;
+}
+
+
+/* banner */
+.banner-cursoal{
+	position: relative;
+}
+
+.banner-cursoal, .banner-cursoal img{
+	width: 780px;
+	height: 306px;
+	/* margin-right: 1px; */
+}
+
+.cursoal-silide{
+	position: absolute;
+	top: 0;
+	left: -780px;
+	font-size: 0;
+}
+
+/* 轮播左右按钮 */
+.cursoal-btn{
+	position: absolute;
+	/* z-index: 1; */
+	display: inline-block;
+	width: 26px;
+	height: 54px;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	text-align: center;
+	line-height: 54px;
+	font-size: 24px;
+	top: 42%;
+	cursor: pointer;
+}
+
+.banner-cursoal .prev{
+	left: 34px;
+}
+.banner-cursoal .next{
+	right: 34px;
+}
+
+.cursoal-dot{
+	position: absolute;
+	display: inline-block;
+	top: 90%;
+	left: 43%;
+}
+.cursoal-dot li{
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(134,134,134,0.5);
+	margin: 0 5px;
+	color: #fff;
+}
+.cursoal-dot li.on{
+	background: rgba(255,255,0,0.5);
+	color: orange;
+}
+
+
+/* 商品推荐 */
+/* .recommen-main{
+	height: 60px;
+	font-size: 24px;
+	line-height: 58px;
+	color: #FF2D52;
+	font-weight: bold;
+} */
+
+.recommen-title{
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.recommen-title a{
+	float: left;
+	display: block;
+	width: 240px;
+	height: 40px;
+	line-height: 39px;
+	text-align: center;
+	border-bottom: 2px solid transparent;
+	color: #000;
+	cursor: pointer;
+	padding: 0 10px;
+	position: relative;
+}
+
+.recommen-title a:hover,
+.recommen-title a.active{
+	color: #FF2D52;
+	border-color: #FF2D52;
+}
+
+
+/* floot右边的小三角 */
+.recommen-title > a:hover:after,
+.recommen-title > a.active:after{
+	content: '';
+	display: inline-block;
+	border: 6px solid transparent;
+	border-bottom-color: #e8660f;
+	/* border-top-color: #0077AA;
+	border-left-color: lawngreen; */
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -6px;
+}
+/* tab切换公共样式 */
+.tab-lists{
+	display: none;
+}
+.tab-lists.active{
+	display: block;
+}
+
+
+/* 推荐列表 */
+/* .recommen-box{
+	padding: 20px 15px;
+} */
+
+.recommen-lists{
+	width: 240px;
+	height: 100%;
+	padding: 13px;
+	border: 1px solid #ccc;	
+	border-left: ;
+}
+
+.recommen-box .recommen-lists:hover{
+	border: 1px solid #ccc;
+}
+
+.recommen-lists img{
+	width: 212px;
+	height: 230px;
+	text-align: center;
+	/* height: 212px; */
+}
+
+.recommen-goods-title{
+	height: 38px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+.recommen-goods-price{
+	line-height: 22px;
+}
+
+.price{
+	font-weight: bold;
+}
+
+.recommen-r{
+	font-size: 14px;
+	line-height: 0;
+	font-weight: normal;
+	padding-top: 20px;
+}
+
+.recommen-r p{
+	color: #000;
+	cursor: pointer;
+	padding: 0 10px;
+	position: relative;
+}
+
+
+.recommen-r p:hover{
+	color: #FF2D52;
+}
+
+
+
+
+
+/* 特价秒杀 */
+.discount .count-down{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+}
+.discount .count-down .time{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 22px;
+	background: #666;
+	border-radius: 50%;
+}
+
+.discount-content{
+	height: 326px;
+}
+
+.discount-content .goods-lists{
+	width: 950px;
+	height: 100%;
+}
+
+/* > 后代选择器（层级选择器）-->子级 */
+.discount-content .goods-lists > li{
+	width: 33.333%;
+	height: 163px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	padding: 27px 25px;
+}
+
+/* 商品图片 */
+.discount-content .goods-lists .img{
+	width: 107px;
+	height: 107px;
+}
+
+.discount-content .goods-info{
+	padding-left: 120px;
+	width: 100%;
+}
+
+/* 商品标题 */
+.discount-content .goods-info .goods-info-title{
+	height: 37px;
+	line-height: 18px;
+}
+
+.goods-info .pg-box{
+	width: 60px;
+	height: 8px;
+	border: 1px solid #fe9373;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.goods-info .progress{
+	width: 75%;
+	background: #fe9373;
+	height: 100%;
+}
+
+.goods-info .pg-text{
+	color: #ffbda3;
+}
+
+/* 限时秒杀右边内容 */
+
+/* 查看更多 */
+.discount-content .show-more{
+	width: 250px;
+	height: 100%;
+	border-left: 1px solid #ccc;
+	background: #d4e9fa;
+	padding: 45px 50px;
+}
+
+
+.discount-content .show-more-text{
+	height: 100%;
+	border: 1px solid #fff;
+	/* padding: 50px 30px; */
+	text-align: center;
+	padding-top: 35px;
+	color: #fff;
+}
+
+.discount-content .show-more-text .seeall{
+	font-size: 22px;
+	line-height: 50px;
+	display: inline-block;
+	border-bottom: 2px solid #fff;
+}
+
+
+/* 点击进入按钮 */
+.show-more-text .button{
+	background: #a8b5bf;
+	border-color: #a8b5bf;
+	color: #fff;
+	margin-top: 20px;
+}
+
+/* 1F 母婴用品 */
+.floot-one-r{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	padding-top: 32px;
+	margin-right: 20px;
+}
+
+.floot-one-r a{
+	color: #000;
+	cursor: pointer;
+	padding: 0 10px;
+	position: relative;
+}
+
+
+.floot-one-r a:hover,
+.floot-one-r a.active{
+	color: #FF2D52;
+}
+
+/* floot右边的小三角 */
+.floot-one-r > a:hover:after,
+.floot-one-r > a.active:after{
+	content: '';
+	display: inline-block;
+	border: 6px solid transparent;
+	border-bottom-color: #e8660f;
+	/* border-top-color: #0077AA;
+	border-left-color: lawngreen; */
+	position: absolute;
+	left: 50%;
+	bottom: -7px;
+	margin-left: -6px;
+}
+
+/* 1F 商品详情 */
+
+/* 1F左边 */
+.goods-content{
+	height: 470px;
+}
+
+.floor-one-goods .goods-left-text{
+	width: 248px;
+	height: 100%;
+	background: #d4eafb;
+	padding: 18px;
+}
+
+.goods-left-text .goods-txts{
+	text-align: center;
+	margin-top: -22px;
+}
+
+/* 1F左边分类 */
+.goods-left-text .goods-classify{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.goods-left-text .goods-classify a{
+	display: inline-block;
+	background: #fff;
+	width: 63px;
+	height: 63px;
+	color: #000;
+	margin-top: 10px;
+	margin-left: 5px;
+	line-height: 63px;
+	border-radius: 50%;
+}
+
+/* 分类鼠标悬停事件 */
+.goods-left-text .goods-classify a:hover{
+	background: #ffe9ed;
+	color: #FF2D52;
+}
+
+/* 中间商品列表 */
+.floor-one-goods .floor-goods-cont{
+	width: 100%;
+	height: 100%;
+	padding-left: 248px;
+	padding-right: 200px;
+}
+
+.middle-goods{
+	width: 25%;
+	height: 235px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 16px;
+}
+
+
+
+.middle-goods img{
+	width: 150px;
+	height: 150px;
+}
+
+.middle-goods-title{
+	height: 37px;
+	line-height: 18px;
+}
+
+.middle-goods-price{
+	line-height: 32px;
+}
+
+/* 排名 */
+.goods-right-text{
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 0 10px;
+}
+
+.goods-right-text .goods-pm{
+	height: 35px;
+	border-bottom: 1px solid #E2E2E2;
+	line-height: 34px;
+	color: #000;
+	font-size: 14px;
+	
+}
+.goods-right-text .pm-list{
+	margin-top: 1px;
+	padding: 8px 4px;
+	border-bottom: 1px dashed #E2E2E2;
+}
+
+.goods-right-text .pm-list:last-child{
+	border-bottom: 0;
+}
+
+.goods-right-text .pm-list img{
+	width: 54px;
+	height: 54px;
+}
+
+.goods-right-text .pm-list-cont{
+	padding-left: 60px;
+}
+
+/* 排名列表只显示一行 */
+.pm-list-cont .pm-txt{
+	white-space: nowrap;
+}
+
+.pm-goods-price{
+	margin-top: 14px;
+}
+
+/* 猜你喜欢 */
+.like-box{
+	padding: 20px 15px;
+}
+
+.like-one-r{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	padding-top: 32px;
+	margin-right: 20px;
+}
+
+.like-one-r a{
+	color: #000;
+	cursor: pointer;
+	padding: 0 10px;
+	position: relative;
+}
+
+
+.like-one-r a:hover,
+.like-one-r a.active{
+	color: #FF2D52;
+}
+
+/* 中间商品列表 */
+.like-lists{
+	width: 20%;
+	height: 100%;
+	padding: 10px;
+	border: 1px solid transparent;
+	
+}
+
+.like-box .like-lists:hover{
+	border: 1px solid #ccc;
+}
+
+.like-lists img{
+	width: 212px;
+	height: 212px;
+}
+
+.like-goods-title{
+	height: 40px;
+	line-height: 20px;
+	margin-top: 14px;
+}
+
+.like-goods-price{
+	line-height: 34px;
+}
+
+.price{
+	font-weight: bold;
+}
+
