@@ -6,3 +6,116 @@
 .all-option span{
 	padding-left: 10px;
 }
+
+.cont-box{
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+/* 内容左边 */
+.member-left {
+	width: 230px;
+	height: 100%;
+	border: 1px solid #ccc;
+}
+
+.member-center {
+	width: 100%;
+	height: 60px;
+	padding-left: 28px;
+	line-height: 56px;
+	border-bottom: 1px solid #ccc;
+	background: #FFF9F5;
+}
+
+.myOrder {
+	width: 204px;
+	height: auto;
+	margin-left: 12px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.myOrder:last-child {
+	border-bottom: 0;
+}
+
+.order-lists {
+	display: none;
+}
+
+.order-lists li {
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 52px;
+	cursor: pointer;
+}
+
+.order-lists li:hover{
+	color: #FF2D52;
+}
+
+.myOrder .liStyle {
+	height: 30px;
+	font-weight: bold;
+	line-height: 52px;
+	cursor: pointer;
+	list-style-type: square;
+}
+
+.myOrder .liStyle:hover{
+	color: #FF2D52;
+}
+ 
+ .myOrder .order-num{
+	 margin-top: 16px;
+	 margin-right: 10px;
+	 float: right;
+	 width: 18px;
+	 height: 18px;
+	 text-align: center;
+	 line-height: 18px;
+	 color: #FF2D52;
+ }
+ 
+ .describe {
+	 width: 962px;
+	 height: auto;
+	 padding: 18px;
+	 padding-bottom: 0;
+	 border: 1px solid #ccc;
+ }
+ 
+.describe-title{
+	 width: 100%;
+	 height: 36px;
+	 border-bottom: 1px dashed #ccc;
+ }
+
+.describe-title .title-txt{
+	font-size: 24px;
+	height: 36px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.describe-text{
+	margin-top: 24px;
+}
+
+.describe-text .describe-subtitle{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.describe-text p{
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+ 
+ 
