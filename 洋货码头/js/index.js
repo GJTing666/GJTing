@@ -250,11 +250,11 @@ function cursoal() {
 }
 
 // 懒加载
-$('img').lazyload({
-	effect: 'fadeIn',
-	threshold: -450,
-	// placeholder: '' 加图片路径 为占位图
-})
+// $('img').lazyload({
+// 	effect: 'fadeIn',
+// 	threshold: -450,
+// 	// placeholder: '' 加图片路径 为占位图
+// })
 
 
 
