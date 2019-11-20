@@ -3,7 +3,7 @@ $(function () {
 
     let token = window.localStorage.getItem("token");
     if (!token) {
-        window.location.href = "welcome.html";
+        window.location.href = "login.html";
         return false;
     }
 
@@ -18,7 +18,7 @@ $(function () {
             if (res.status == 512) {
                 window.localStorage.removeItem("token");
                 window.localStorage.removeItem("info");
-                window.location.href = "welcome.html";
+                window.location.href = "login.html";
             } else if (res.status != 200) {
                 $.tooltip({
                     type: 'error',
@@ -43,7 +43,7 @@ $(function () {
                 if (res.status == 200) {
                     window.localStorage.removeItem("token");
                     window.localStorage.removeItem("info");
-                    window.location.href = "welcome.html";
+                    window.location.href = "login.html";
                 }else{
                     $.tooltip({
                         type: "error",
@@ -52,13 +52,5 @@ $(function () {
                 }
             }
         })
-    });
-
-
-    let url = window.location.search;
-    url = url.substr(6)
-    console.log(url)
-    let html = '';
-    html = `<span>欢迎你：${url}</span>`
-    $('.name').html(html)
+    })
 })

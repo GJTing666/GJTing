@@ -1,62 +1,16 @@
+
+
 let jwt = require('jsonwebtoken');
 let common = require('../controler/common');
 let data = require('../controler/data/data');
+
 query = require('../controler/mysql');
 
-
 module.exports = {
-    // 注册
-    async register(req, res){
-        let params = req.body;
-        // console.log(params)
-        // 判断邮箱
-        if(!params.email || !common.isEmail(params.email)){
-            res.json({
-                status: 501,
-                message: "邮箱格式不正确"
-            })
-            return false;
-        }
-
-        // 判断密码是否存在
-        if(!params.pwd){
-            res.json({
-                status: 504,
-                message: "请输入密码"
-            })
-            return false;
-        }
-
-        // 判断用户是否注册
-        let isRegist = await data.isRegister(params.email);
-        if(!isRegist){
-            res.json({
-                status: 505,
-                message: "该用户已注册"
-            })
-            return false;
-        }
-
-        // 将数据插入数据库中
-        let insertData = await data.register([params.name, params.email, params.pwd, 1]);
-        if(insertData){
-            res.json({
-                status: 200,
-                message: ""
-            })
-        }else{
-            res.json({
-                status: 507,
-                message: "服务器错误！！！"
-            })
-        }
-    },
-
-    // 登录验证
     async login(req, res){
         let password = req.body.password,
         email = req.body.email;
-        // console.log(email)
+
         if(!email || !common.isEmail(email)){
             res.json({
                 status: 501,
@@ -146,4 +100,4 @@ module.exports = {
             })
         }
     }
-};
+}

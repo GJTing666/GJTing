@@ -94,14 +94,6 @@ a {
     margin-top: 10px;
 }
 
-.alert{
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 100;
-}
-
 button {
     border-radius: 20px;
     border: 2px solid transparent;

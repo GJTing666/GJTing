@@ -23,6 +23,9 @@ app.all('*', function (req, res, next) {
     next()
 })
 
+// 获取验证码
+app.get('/getCode', router.getCode);
+
 // 注册
 app.post('/register', urlencodeParser, router.register);
 

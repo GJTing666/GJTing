@@ -15,10 +15,21 @@ module.exports = {
             return true;
         }
     },
-    
+    // 查询邮箱对应的验证码
+    async isCode(email, code) {
+        let sql = 'select * from verify where email=? order by createTime desc';
+        let data = await query(sql, email);
+
+        if (data.length <= 0) return false
+
+        if (data[0].code == code) {
+            return true;
+        }
+        return false;
+    },
     // 插入注册的用户信息
     async register(data) {
-        let sql = 'insert into user(name, email, password, status) values (?)';
+        let sql = 'insert into user(email, password, status) values (?)';
 
         let result = await query(sql, [data]).catch(function (res) {
             console.log('error:' + res)
